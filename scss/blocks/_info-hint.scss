@@ -1,0 +1,54 @@
+.info-hint {
+	position: absolute;
+	top: -86px;
+	left: -135%;
+
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+
+	width: 112px;
+	height: 56px;
+	padding-top: 15px;
+	background-image: url(./../image/icons/bg-info-hint.svg);
+	backdrop-filter: blur(4px);
+}
+
+.info-hint__radio {
+	clip: rect(0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+.info-hint__radio:checked + .info-hint__radio-fake {
+	background-image: url(./../image/icons/chek-box.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.info-hint__radio-fake {
+	width: 18px;
+	height: 18px;
+	flex-shrink: 0;
+
+	background-color: var(--ui-gray);
+	border-radius: 50%;
+	border: 2px solid var(--border-info-dot);
+	box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+
+	&--orange {
+		background-color: var(--ui-orange);
+	}
+
+	&--biruza {
+		background-color: var(--ui-biruza);
+	}
+
+	&--gray {
+		background-color: var(--ui-gray);
+	}
+}

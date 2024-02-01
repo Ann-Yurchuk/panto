@@ -1,0 +1,60 @@
+.nav-list {
+	align-self: center;
+	justify-self: center;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 65px;
+
+	font-weight: 500;
+	font-size: 18px;
+
+	@include media-tablet() {
+		display: none;
+	}
+}
+
+.nav-list__item {
+	position: relative;
+	padding-bottom: 10px;
+}
+
+.nav-list__link {
+	transition: opacity 0.2s ease-in;
+
+	&:hover {
+		opacity: 0.6;
+	}
+
+	&--dropdown {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		gap: 8px;
+
+		&::after {
+			content: url("../image/icons/arrow-down.svg");
+			height: 18px;
+		}
+	}
+}
+
+.nav-list__sub-nav {
+	opacity: 0;
+	width: 160px;
+	pointer-events: none;
+
+	position: absolute;
+	left: -78px;
+	top: -10px;
+
+	transform: translate(0, 10%);
+	transition: all 0.2s ease-in;
+}
+
+.nav-list__item:hover .nav-list__sub-nav {
+	pointer-events: all;
+	opacity: 1;
+	transform: translate(0, 0);
+}

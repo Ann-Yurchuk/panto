@@ -1,0 +1,63 @@
+:root {
+	--text-color: #1e1e1e;
+	--text-muted: #8d8d8d;
+	--text-secondary: #fff;
+	--text-card-dark-blue: #0d1b39;
+	--accent: #e58411;
+
+	--header-text-color: #ffffff;
+	--logo-text-color: #ffffff;
+
+	--bg-color: #ffffff;
+	--bg-slider-btn: #ffffff;
+	--bg-products: #f7f7f7;
+	--bg-products-photo: #fafafa;
+	--bg-tab: #eee;
+	--sub-nav-bg: #2d2f33;
+
+	--footer-accent: #f6973f;
+	--footer-bg: #2d2f33;
+	--footer-text-color: rgba(255, 255, 255, 0.8);
+
+	--bg-info-dot: #fff;
+	--border-info-dot: #fff;
+
+	--ui-orange: #e58411;
+	--ui-biruza: #00d6c9;
+	--ui-gray: #7c7c7c;
+	--ui-dark-blue: #0d1b39;
+
+	--font-main: "Poppins", sans-serif;
+	--font-cards: "Inter", sans-serif;
+	--font-footer-accent: "DM Sans", sans-serif;
+}
+
+@mixin retina-bg($image) {
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+		background-image: $image;
+	}
+}
+
+@mixin media-desktop-small() {
+	@media (max-width: 1400px) {
+		@content;
+	}
+}
+
+@mixin media-tablet() {
+	@media (max-width: 990px) {
+		@content;
+	}
+}
+
+@mixin media-mobile-xl() {
+	@media (max-width: 819px) {
+		@content;
+	}
+}
+
+@mixin media-mobile() {
+	@media (max-width: 500px) {
+		@content;
+	}
+}

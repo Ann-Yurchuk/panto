@@ -1,0 +1,28 @@
+.sub-nav__list {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	gap: 10px;
+	padding: 20px 40px;
+	border-radius: 16px;
+	background-color: var(--sub-nav-bg);
+	color: var(--text-secondary);
+
+	font-size: 16px;
+
+	a {
+		color: var(--text-secondary);
+		transition: color 0.2s ease-in;
+
+		&:hover {
+			color: var(--accent);
+		}
+	}
+}
+
+.sub-nav__list-item {
+}
+
+.sub-nav__list-link {
+}

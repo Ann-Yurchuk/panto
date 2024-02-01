@@ -1,0 +1,25 @@
+.benefits {
+	padding: clamp(20px, -1.023rem + 11.36vw, 120px) 0;
+}
+
+.benefits__grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: center;
+	gap: 18px;
+
+	@include media-tablet() {
+		grid-template-columns: repeat(auto-fit, 280px);
+		grid-auto-rows: minmax(200px, auto);
+		gap: clamp(18px, -0.129rem + 6.27vw, 60px);
+	}
+}
+
+.benefits__title {
+	max-width: 270px;
+	margin-top: 38px;
+
+	@include media-mobile-xl() {
+		margin-top: 18px;
+	}
+}

@@ -1,0 +1,23 @@
+.nav {
+	display: grid;
+	grid-template-columns: 2fr 8fr 1fr 1fr;
+	gap: clamp(20px, 0.568rem + 3.41vw, 50px);
+}
+
+.nav__logo {
+	align-self: center;
+}
+
+.nav__btn {
+	display: block;
+	width: 32px;
+}
+
+.nav-cart {
+	position: relative;
+	margin-left: auto;
+}
+
+.nav-cart__link {
+	align-items: center;
+}

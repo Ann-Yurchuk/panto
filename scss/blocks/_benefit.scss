@@ -1,0 +1,20 @@
+.benefit {
+}
+
+.benefit__title {
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 24px;
+}
+
+.benefit__text {
+	max-width: 288px;
+	margin-bottom: 14px;
+	font-size: 16px;
+	line-height: 1.85;
+	opacity: 0.8;
+
+	@include media-mobile-xl() {
+		max-width: 306px;
+	}
+}

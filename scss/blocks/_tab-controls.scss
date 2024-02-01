@@ -1,0 +1,45 @@
+.tabs-controls {
+	display: inline-flex;
+	align-items: flex-start;
+	padding: 6px;
+	border-radius: 44px;
+	background-color: var(--bg-tab);
+}
+
+.tabs-controls__btn {
+	width: 84px;
+	height: 45px;
+	padding: 4px 20px;
+	text-align: center;
+	border-radius: 32px;
+	background-color: transparent;
+
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.85;
+	opacity: 0.8;
+
+	transition: background-color 0.2s ease-in;
+
+	&:hover {
+		background-color: rgba(255, 255, 255, 0.8);
+	}
+
+	&--active {
+		background-color: var(--bg-color);
+
+		&:hover {
+			background-color: var(--bg-color);
+		}
+	}
+
+	@include media-mobile-xl() {
+		width: 54px;
+		height: 40px;
+		padding: 4px 9px;
+
+		border-radius: 32px;
+		font-size: 16px;
+		line-height: 1.45;
+	}
+}

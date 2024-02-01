@@ -1,0 +1,137 @@
+.product-card {
+	position: relative;
+	z-index: 2;
+	width: 268px;
+	height: 550px;
+	font-family: var(--font-cards);
+	border-radius: 20px;
+	background-color: var(--bg-color);
+	box-shadow: 0 5px rgba(245, 235, 235, 0.2), 0px 2px rgba(232, 228, 228, 0.2);
+
+	@include media-mobile-xl() {
+		width: 240px;
+		height: 350px;
+	}
+}
+
+.product-card__link {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.product-card__photo {
+	height: 240px;
+	text-align: center;
+	background-color: var(--bg-products-photo);
+	border-radius: 20px 20px 0 0;
+
+	@include media-mobile-xl() {
+		height: 200px;
+	}
+}
+
+.product-card__photo-img {
+	margin-top: -50px;
+	height: 280px;
+	border-radius: 7px;
+
+	@include media-mobile-xl() {
+		height: 240px;
+	}
+}
+
+.product-card__desc {
+	height: 310px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 6px;
+
+	background-color: var(--bg-color);
+	border-radius: 0 0 20px 20px;
+	padding: 14px 22px 14px;
+
+	@include media-mobile-xl() {
+		height: 240px;
+		padding: 10px 15px 14px;
+	}
+}
+
+.product-card__category {
+	position: relative;
+	z-index: 3;
+	color: var(--text-muted);
+	font-size: 16px;
+}
+
+.product-card__title {
+	color: var(--text-card-dark-blue);
+	font-size: 22px;
+	font-weight: 600;
+	text-transform: capitalize;
+
+	@include media-mobile-xl() {
+		font-size: 18px;
+	}
+}
+
+.product-card__rating {
+	display: flex;
+	gap: 3px;
+}
+
+.product-card__rating-img {
+	width: 18px;
+}
+
+.product-card__footer {
+	margin-top: 15px;
+	padding-bottom: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-around;
+	gap: 20px;
+
+	@include media-mobile-xl() {
+		gap: 13px;
+		margin-top: 0px;
+	}
+}
+
+.product-card__btn {
+	position: relative;
+	z-index: 3;
+	width: 48px;
+	height: 48px;
+	padding: 12px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--ui-dark-blue);
+	border-radius: 50%;
+
+	transition: opacity 0.2s ease-in;
+
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+.product__quantity {
+	position: absolute;
+}
+
+.product__price {
+	display: flex;
+	align-items: flex-start;
+	gap: 3px;
+
+	color: var(--text-card-dark-blue);
+	font-size: 21px;
+	font-weight: 600;
+}
